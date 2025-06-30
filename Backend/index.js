@@ -21,7 +21,7 @@ const { OrdersModel } = require("./models/OrdersModel");
 
 // middlewares
 app.use(cors({
-    origin: ["http://localhost:3000","http://localhost:3001"],
+    origin: ["https://stocknova-frontend.onrender.com/","https://stocknova-dashboard.onrender.com/"],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
 }));
