@@ -1,5 +1,7 @@
 import { React, useState } from "react";
 import { Link } from "react-router-dom";
+import { fetchSomeData } from '../api';
+
 
 import axios from "axios";
 import GeneralContext from "./GeneralContext";
@@ -12,7 +14,7 @@ function BuyActionWindow({ uid }) {
   const [stockPrice, setStockPrice] = useState(0.0);
 
   const handleBuyClick = () => {
-    axios.post("https://stocknova-dashboard.onrender.com/newOrder", {
+    axios.post("process.env.REACT_APP_API_BASE_URL/newOrder", {
       name: uid,
       qty: stockQuantity,
       price: stockPrice,
