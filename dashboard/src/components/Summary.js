@@ -8,8 +8,7 @@ const Summary = () => {
   const [allholdings, setAllHoldings] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3002/allholdings").then((res) => {
-      // console.log(res.data); 
+    axios.get("https://stocknova-dashboard.onrender.com/allholdings").then((res) => {
       setAllHoldings(res.data);
     })
   }, []);
