@@ -6,7 +6,7 @@ const Positions = () => {
    const [allpositions, setAllPositions] = useState([]);
 
    useEffect(()=>{
-     axios.get("https://stocknova-dashboard.onrender.com/allpositions").then((res)=>{
+     axios.get("process.env.REACT_APP_API_BASE_URL/allpositions").then((res)=>{
       setAllPositions(res.data);
      })
    },[])
