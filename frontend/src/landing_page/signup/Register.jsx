@@ -36,7 +36,7 @@ function Register() {
     const handleSubmit = async (e) => { 
         e.preventDefault();
         try {
-             let {data} = await axios.post("http://localhost:3002/signup",{ ...inputValue,},{ withCredentials: true });
+             let {data} = await axios.post("https://stocknova-dashboard.onrender.com/signup",{ ...inputValue,},{ withCredentials: true });
             const { success, message } = data;
             if (success) {
                 handleSuccess(message);
