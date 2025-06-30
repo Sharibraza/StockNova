@@ -1,0 +1,13 @@
+.main a{
+    text-decoration: "none";
+}
+
+.main p{
+    font-family: "inter,serif";
+    font-size: "1rem";
+    margin-bottom: "15px" ;
+}
+
+.col img{
+  height: 100px;
+}

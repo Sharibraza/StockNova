@@ -1,0 +1,16 @@
+a{
+    text-decoration: "none";
+}
+
+.col p{
+    font-size: .75rem;
+    color: #9b9b9b;
+    margin-top: 1rem;
+}
+
+.btn{
+    color: #fff;
+    width: 16%;
+    background:#387ed1;
+    margin-left: 40%;
+}
