@@ -7,7 +7,7 @@ const Orders = () => {
   const [allOrders, setAllOrders] = useState([]);
 
   useEffect(() => {
-    axios.get("process.env.REACT_APP_API_BASE_URL").then((res) => {
+    axios.get("https://stocknova-dashboard.onrender.com/allorders").then((res) => {
       // console.log(res.data); 
       setAllOrders(res.data);
     })
